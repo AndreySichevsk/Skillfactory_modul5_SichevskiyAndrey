@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: "Oswald", sans-serif;
+    background: url(https://avatars.mds.yandex.net/i?id=1f6c9641ba8ffdf67e81b1cf9c682cc3635af20c-9690550-images-thumbs&n=13);
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight:500;
+    margin-top:5px;
+    margin-bottom: 2px;
+}
+
+.container {
+    width: 800px;
+    min-height: 500px;
+    border: 10px solid #fff;
+    margin:0 auto;
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+}
+
+.myName {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;    
+    font-size: 30px;
+    background:url(images/background-myName.jpg);
+    color:#fff;
+    margin-right: 10px;
+    border-radius: 20px;
+    
+}
+
+.myName::after {
+    content: '';
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity:0.5;
+    border-radius: 20px;
+}
+
+.title {
+    position:relative;
+    z-index: 1;
+}
+
+.userpic {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background: url(images/photo2.png) center / cover;
+    border-radius: 20px;
+}
+
+.nav ul {
+    display:flex;
+    justify-content: space-evenly;
+    background: #c2c0c0;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border:2px solid #5f5e5e;
+}
+
+.nav li a {
+    display:flex;
+    padding: 10px 30px;
+    text-decoration:none;
+    color: rgb(39, 38, 38);
+    border-radius: 20px;
+    transition: background .3s ease;
+}
+
+.nav li a:hover {
+    background: #5f5e5e;
+    color:#fff;
+    transition: background .3s ease;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+p, li {
+    line-height: 25px;
+}
+
+.footer {
+    display:flex;
+    justify-content: space-between;
+    background: #c2c0c0;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 15px;
+}
+
+.tel {
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto 30px;
+    height: 30px;
+    width: 150px;
+}
+
+.mail {
+    display: flex;
+    justify-content: space-evenly;
+    margin:auto 30px;
+    height: 30px;
+    width: 200px;
+}
